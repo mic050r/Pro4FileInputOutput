@@ -3,7 +3,7 @@ package file01;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class RileReaderEx {
+public class FileReaderEx {
 
 	public static void main(String[] args) {
 		FileReader fin = null;
