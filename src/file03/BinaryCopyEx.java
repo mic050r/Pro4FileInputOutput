@@ -8,8 +8,10 @@ import java.io.IOException;
 public class BinaryCopyEx {
 
 	public static void main(String[] args) {
-		File src = new File("./src/file03/forest.jpg");
-		File dest = new File("./src/file03/copyforest.jpg");
+//		File src = new File("./src/file03/forest.jpg");
+//		File dest = new File("./src/file03/copyforest.jpg");
+		String src = ("./src/file03/forest.jpg");
+		String dest = ("./src/file03/copyforest.jpg");
 		int c;
 		try {
 			FileInputStream fi = new FileInputStream(src);
@@ -19,7 +21,8 @@ public class BinaryCopyEx {
 			}
 			fi.close();
 			fo.close();
-			System.out.println(src.getPath() + "를 " + dest.getPath() + "로 복사하였습니다.");
+//			System.out.println(src.getPath() + "를 " + dest.getPath() + "로 복사하였습니다.");
+			System.out.println("복사가 잘되었음");
 		} catch (IOException e) {
 			System.out.println("파 일복사 오류");
 		}
